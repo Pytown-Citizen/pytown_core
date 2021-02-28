@@ -43,3 +43,6 @@ jobs:
         name: codecov-pytown-model-name      
     - name: Check formatting with black
       uses: psf/black@stable
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v1.5     
+          
