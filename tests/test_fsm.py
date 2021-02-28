@@ -2,7 +2,7 @@ import unittest
 from pytown_core.patterns.behavioral import FSM, IState
 
 
-class FSM_test(unittest.TestCase):
+class FSMTest(unittest.TestCase):
     def setUp(self):
         self.fsm = fsm()
 

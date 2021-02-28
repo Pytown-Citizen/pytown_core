@@ -3,7 +3,7 @@ from pytown_core.patterns.behavioral import FSM, IState
 from pytown_core.runners import MyThread
 
 
-class FSM_Thread_test(unittest.TestCase):
+class FSMThreadTest(unittest.TestCase):
     def setUp(self):
         self.fsm = fsm()
 
