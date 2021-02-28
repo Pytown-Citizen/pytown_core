@@ -55,7 +55,11 @@ This repository holds implementation of some design patterns in python
 
 pytown_core is used by pytown_model, pytown_client, and pytown_server
 
+<!--  For an non understandable reason it doesn't work 
 ![Packages Overview](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Pytown-Citizen/pytown_core/main/docs/diagrams/general.uml)
+But this works:
+-->
+![Packages Overview](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Khalshim/testuml/main/docs/diagrams/general.uml)
 
 
 <!-- ROADMAP -->
