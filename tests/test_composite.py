@@ -3,7 +3,7 @@ import unittest
 from pytown_core.patterns.structural import IComposite, ILeaf
 
 
-class Composite_test(unittest.TestCase):
+class CompositeTest(unittest.TestCase):
     def setUp(self):
 
         self.c1 = MyComposite("C1")
@@ -35,7 +35,6 @@ class Composite_test(unittest.TestCase):
         self.c3.add(self.l3)
 
         text = ""
-        error = None
         kwargs = self.c1.operation(text=text)
         self.assertEqual(kwargs["text"], "C1C2L1L2C3No RaiseL3")
 

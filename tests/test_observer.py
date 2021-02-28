@@ -2,7 +2,7 @@ import unittest
 from pytown_core.patterns.behavioral import IObserver, IObservable, Observable
 
 
-class Observer_test(unittest.TestCase):
+class ObserverTest(unittest.TestCase):
     def setUp(self):
         self.observable = MyObservable()
 
@@ -16,9 +16,6 @@ class Observer_test(unittest.TestCase):
     def tearDown(self):
         self.observable.detach(self.observer1)
         self.observable.detach(self.observer2)
-
-    def test_attach_detach(self):
-        pass
 
     def test_notify(self):
         self.observable.detach(self.observer3)
