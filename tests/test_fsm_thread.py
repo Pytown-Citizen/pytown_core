@@ -39,9 +39,9 @@ class fsm(FSM, MyThread):
         self.letters_list = []
 
     def _pre_run(self):
-        FSM._pre_run(self)
+        MyThread._pre_run(self)
         self.letters_list.append("D")
 
     def _post_run(self):
-        FSM._post_run(self)
+        MyThread._post_run(self)
         self.letters_list.append("F")
