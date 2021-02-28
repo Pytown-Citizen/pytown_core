@@ -48,3 +48,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      with:
+        args: >
+          -Dsonar.organization=pytown-citizen-key
+          -Dsonar.projectKey=Pytown-Citizen_pytown_core
+          -Dsonar.python.coverage.reportPaths=coverage.xml
+          -Dsonar.sources=.
+          -Dsonar.projectVersion=0.0.1
+          -Dsonar.verbose=true
