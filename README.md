@@ -19,7 +19,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Introduction <a name="introduction"></a>
 
-This repository holds implementation of design pattern for python
+This repository holds implementation of some design patterns in python
 
 <!-- GETTING STARTED -->
 ## Getting Started <a name="gettingstarted"></a>
