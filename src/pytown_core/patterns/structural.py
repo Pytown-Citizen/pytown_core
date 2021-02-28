@@ -26,7 +26,7 @@ class IComponent(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    # TODO : return type should maybe be a bool with an internal error check on the tree
+    # TODO : return type should maybe be a bool with an internal error
     def operation(self, **kwargs) -> tuple:
         raise NotImplementedError
 

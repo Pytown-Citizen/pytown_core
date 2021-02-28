@@ -24,12 +24,12 @@ class IState(ABC):
 
 
 class FSM:
-    def __init__(self, initial_state: IState):
+    def __init__(self, initial_state):
 
         self._state = initial_state(self)
 
     # FSM state delegation #
-    def set_state(self, state: IState):
+    def set_state(self, state):
         logging.info("Entering {}".format(state.__name__))
         if self._state != state:
             self._state = state(self)
@@ -86,7 +86,7 @@ class Visitable(ABC):
 
 class Visitor(ABC):
 
-    # Method of visitor depends on the concrete object they are visiting. This has been done for pytown game
+    # Method of visitor depends on the concrete object they are visiting.
     def visit_town(self, visitable: Visitable) -> None:
         raise NotImplementedError
 

@@ -42,11 +42,11 @@ class NetworkModule(Thread):
     def _check_errors(self):
         if not self._error_queue.empty():
             logging.error(self._error_queue.get())
-            # raise msg
 
     def _stop_exchange(self):
         self.receive_process.join()
         self.send_process.join()
+        # Test add smell
 
     # SubProcesses methods
     def _receive(self):
@@ -54,11 +54,11 @@ class NetworkModule(Thread):
             if not self._receive_queue.full():
                 try:
                     self._receive_queue.put(self.connexion.recv())
-                except Exception as e:
+                except Exception:
                     self._error_queue.put(
                         NetworkModuleError(str("Issue during _receive"))
                     )
-                    # raise Exception
+                    # TODO: raise Exception
 
     def _send(self):
         while self._is_running:
@@ -66,9 +66,9 @@ class NetworkModule(Thread):
                 msg_to_send = self._send_queue.get()
                 try:
                     self.connexion.send(msg_to_send)
-                except Exception as e:
+                except Exception:
                     self._error_queue.put(NetworkModuleError(str("Issue during _send")))
-                    # raise Exception
+                    # TODO:raise Exception
 
 
 class NetworkModuleError(Exception):
