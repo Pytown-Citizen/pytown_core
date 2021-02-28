@@ -4,7 +4,7 @@ from pytown_core.runners import MyThread
 import logging
 
 
-class MyThread_test(unittest.TestCase):
+class MyThreadTest(unittest.TestCase):
     def setUp(self):
         self.subject = Subject()
 
