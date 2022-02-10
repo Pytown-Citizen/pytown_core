@@ -82,4 +82,4 @@ Contributions are what make the open source community such an amazing place to b
 ## Contact <a name="contact"></a>
 
 Mehdi Halitim - mhalitim@gmail.com
-Project Link: [https://github.com/Pytown-Citizen/pytown_core](https://github.com/Pytown-Citizen/pytown_core)
+Project Link: [https://github.com/Pytown-Citizen/pytown_core](https://github.com/Pytown-Citizen/pytown_core) 
