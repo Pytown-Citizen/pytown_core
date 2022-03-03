@@ -3,6 +3,8 @@ import sys
 from pkg_resources import VersionConflict, require
 from setuptools import setup
 
+__version__="0.0.0"
+
 try:
     require("setuptools>=38.3")
 except VersionConflict:
